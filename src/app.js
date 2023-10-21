@@ -5,6 +5,7 @@ let prize = {
     secondAttempt: 50,
     thirdAttempt: 25,
 }
+
 let initialNumber;
 
 function getRandomNumber() {
@@ -35,6 +36,7 @@ function startGame() {
         totalPrize = 0
         questionForPlayer()
     }
+	
     let result = checkResult(userNumber, initialNumber)
     if (result) {
         alert(`Congratulation, you won! Your prize is ${totalPrize} $`)
